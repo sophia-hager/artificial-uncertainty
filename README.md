@@ -1,11 +1,12 @@
-# P(IK) with Dropout
+# Artificial Uncertainty
+
 
 A framework for probing whether a language model "knows" an answer (P(IK)) by
 training a lightweight probe on its hidden states.  The probe can be trained on
 an **unlearned** model to detect which questions the model still answers
 correctly, and evaluated on a base model.  Optionally, **residual dropout** is
 injected into the LLM during training inference to simulate uncertainty on easy
-examples.
+examples. For further information see ["Inducing Artificial Uncertainty in Language Models"](https://openreview.net/pdf?id=cUcWgu0wGU)
 
 ---
 
